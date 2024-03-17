@@ -4,7 +4,7 @@
     height: auto;
 
     .contenu-comp {
-        padding: 150px 0;
+        padding: 10px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,9 +16,7 @@
             gap: 50px;
             padding-top: 50px;
             .card-comp {
-                animation: inclinason 5s linear 1s infinite;
-                //transform: skew(30deg, 1deg);
-                //transform: rotateY(0);
+                animation: inclinason 5s linear 0s infinite;
                 height: 380px;
                 width: 200px;
                 padding: 20px;
@@ -28,8 +26,6 @@
                 radial-gradient(circle at 100% 0%,rgba(255, 255, 0, 0.479) 39.5%,rgba(128, 128, 128, 0.525) 40%),
                 radial-gradient(circle at 100% 0%,rgb(255, 192, 203) 49.5%,rgba(0, 128, 0, 0.499) 50%);
             
-            
-
                 //barre progression
                 .groupe-bp{
                     display: flex;
@@ -47,16 +43,28 @@
                         }
                     }
                 }
+
+                h2 {
+                    color: rgba(0, 0, 0, 0.588);
+                }
+            }
+            .card-comp:hover{
+                animation: none;
+                transform: scale(1.2);
+                z-index: 3;
+                box-shadow: -0.3rem 0 0.75rem 0 hsla(0,0%,0%,0.3);
             }
         }
 
 
         .text-comptence{
+            line-height: 150%;
             width: 80%;
             margin-top: 100px;
             color: rgba(0, 0, 0, 0.645);
             font-size: larger;
             font-weight: bolder;
+            margin: 80px 0;
         }
     }
 }

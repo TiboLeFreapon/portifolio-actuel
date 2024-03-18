@@ -48,13 +48,11 @@
 
 
         .contenu-panneau-acc{
-            color: rgba(255, 255, 255, 0.54);
+            color: rgba(255, 255, 255, 0.76);
             z-index: 10;
-            // padding: 15px;
-            // background: rgba(255, 255, 255, 0.171);
-            // backdrop-filter: blur(10px); 
-            // border-radius: 10px;
-            // box-shadow: 1px 1px 1px 1px rgba(211, 211, 211, 0.582);
+            display: flex;
+            flex-direction: column;
+            width: 80%;
         }
     }
 }

@@ -5,54 +5,88 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    .vague-fond {
-        width: 500%;
-        height: 80%;
+    background-size: 100% 100%;
+    background-color: rgb(63, 71, 78);
+
+
+    .tache {
+        width: auto;
         position: absolute;
-        border-top-left-radius: 120%;
-        border-top-right-radius: 120%;
-        top: 20%;
-        //left: 800px;
+        background-size: cover;
     }
 
-    .premier {
-        transform: traslateY(-50%);
-        transform: traslateX(10px);
-        //left: 300px;
-        background-color: rgba(102, 0, 255, 0.477);
-        animation: deplacement 10s linear reverse infinite;
+    .tache1 {
+        //animation: apparution 3s ease-in-out 0s 1, mouvement1 4s linear 4s infinite;
+       // animation: apparution 3s ease-in-out 0s 1,mouvement 4s linear 4s infinite;
+        animation: mouvement1 8s linear 0s infinite;
     }
 
-    .second {
-        transform: traslateY(-50%);
-        transform: traslateX(30px);
-        //left: 50px;
-        background-color: rgba(234, 0, 255, 0.477);
-        animation: deplacement 20s linear reverse infinite;
+    .tache2 {
 
+        transform: scale(100);
+        //animation: apparution 3s ease-in-out 0.5s 1 normal forwards, mouvement 3s linear 5s infinite;
+        //animation: apparution 3s ease-in-out 0s 1,aggrandit 10s linear 5s infinite;
+        animation: aggrandit 8s linear 0s infinite;
     }
 
-    .troisieme {
-        transform: traslateY(-50%);
-        transform: traslateX(50px);
-        //left: 40px;
-        background-color: rgba(0, 153, 255, 0.16);
-        animation: deplacement 15s linear none infinite;
+    .tache3 {
 
+        transform: scale(100);
+        //animation: apparution 3s ease-in-out 1s 1 normal forwards, mouvement 4s linear 5s infinite;
+        //animation:apparution 3s ease-in-out 0s 1, mouvement 8s linear 5s infinite;
+        animation: mouvement 8s linear 0s infinite;
     }
 
-    .panneau-acc{
+    .tache4 {
+
+        transform: scale(100);
+        //animation: apparution 3s ease-in-out 1.5s 1 normal forwards, mouvement 5s linear 5s infinite;
+        //animation: apparution 3s ease-in-out 0s 1,aggrandit 15s linear 5s infinite;
+        animation: aggrandit 7s linear 0s infinite;
+    }
+
+    .tache5 {
+
+        transform: scale(100);
+        //animation: apparution 3s ease-in-out 2s 1 normal forwards, mouvement 5s linear 6s infinite;
+        animation: aggrandit 9s linear 0s infinite;
+    }
+
+    .panneau-acc {
         display: flex;
         justify-content: center;
         align-items: center;
 
-
-        .contenu-panneau-acc{
-            color: rgba(255, 255, 255, 0.76);
+        .contenu-panneau-acc {
+            backdrop-filter: blur(10px);
+            visibility: hidden;
+            animation: apparition 1s ease-in-out 2s 1 normal forwards;
+            background-color: rgba(255, 255, 255, 0.81);
+            color: rgba(14, 6, 6, 0.76);
             z-index: 10;
             display: flex;
             flex-direction: column;
             width: 80%;
+            padding: 15px;
+            border-radius: 10px;
+            .titre{
+                font-size: 40px;
+                margin: 5px;
+                font-weight: 300;
+            }
+            h3{
+
+                font-weight: 280;
+                margin: 0 auto;
+                font-size: 30px;
+            }
+            .pres-site{
+
+
+                font-weight: 400;
+                margin: 30px 10px;
+                line-height: 25px;
+            }
         }
     }
 }
@@ -77,4 +111,87 @@
     100% {
         transform: translateX(1);
     }
+}
+
+@keyframes apparution {
+
+    0% {
+
+        transform: scale(100);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes apparition {
+    0% {
+
+        visibility: hidden;
+    }
+
+    100% {
+
+        visibility: visible;
+    }
+}
+
+@keyframes mouvement {
+    0% {
+        transform: translate(5px, 5px);
+    }
+
+    25% {
+
+        transform: translate(5px, -5px);
+    }
+
+    50% {
+
+        transform: translate(-5px, -5px);
+    }
+
+    75% {
+
+        transform: translate(-5px, 5px);
+    }
+
+    100% {
+
+        transform: translate(5px, 5px);
+    }
+}
+
+@keyframes mouvement1 {
+    0% {
+        transform: translate(-20px, 20px);
+    }
+
+    25% {
+
+        transform: translate(20px,20px);
+    }
+
+    50% {
+
+        transform: translate(20px,-20px);
+    }
+
+    75% {
+
+        transform: translate(-20px,-20px);
+    }
+
+    100% {
+
+        transform: translate(-20px, 20px);
+    }
+}
+
+@keyframes aggrandit {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.03);}
+    100%{transform: scale(1);}
 }

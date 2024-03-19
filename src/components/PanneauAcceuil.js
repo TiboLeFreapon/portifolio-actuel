@@ -1,16 +1,17 @@
-const PanneauAccueil =()=>{
+const PanneauAccueil = () => {
 
-    return(
+    return (
         <div className="panneau-acc">
             <div className="contenu-panneau-acc">
-                <h1>
+                <h1 className="titre">
                     Thibault schmitt
                 </h1>
-                <h3>
+                <h3 className="sous-titre">
                     Développeur web
                 </h3>
-                <span>Bienvenu sur mon site web. J'ai plus essayé de montrer les diférentes ambiances que je peux créer plutôt que de créer un site web uniforme.</span>
-                <span>En espérant que l'expérience vous plaises.</span>
+                <div className="pres-site">
+                    <span>Bienvenu sur mon site web ! J'espère que l'expérience vous plaira. Je suis actuellement à la recherche d'un emploie donc n'hésitez à me contacter</span>             
+                    </div>
             </div>
         </div>
     )

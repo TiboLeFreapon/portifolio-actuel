@@ -1,5 +1,6 @@
 .page-comp {
-    background-color: rgb(221, 194, 246);
+    //background-color: rgb(221, 194, 246);
+    background-color: rgb(93,138,75);
     // background-color: rgb(173, 84, 255);
     height: auto;
 
@@ -14,6 +15,7 @@
         }
 
         .contenu {
+            font-family: inherit;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;

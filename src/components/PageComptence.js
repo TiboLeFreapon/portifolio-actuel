@@ -39,9 +39,7 @@ const PageComptence = () => {
 
             <div className='text-comptence'>
                 <span className='span-pres'>
-                    Mes compétences sont en constantes améliorations. En effet, la passion que j'ai pour les développement me pousse à coder un peu tous les jours.
-                    Cela peut être au travers de projets personnels sur lesquels je me challenge en utilisant des technologies que je ne connais pas.
-                    Ou bien en suivant dans tutoriel.
+                    Je code tous les jours pour améliorer mes compétences. C'est une passion pour moi.
                 </span>
             </div>
         </div>

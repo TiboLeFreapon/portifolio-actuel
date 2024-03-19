@@ -6,8 +6,12 @@ const PageComptence = () => {
 
     return (<div className="page-comp">
         <div className='contenu-comp'>
-            <h1>Compétences</h1>
+            <div className='text-comptence'>
 
+                Compétences.
+                <span className='span-pres'> Je code tous les jours pour les améliorer.
+                </span>
+            </div>
             <div className='contenu'>
                 <CardComp titreCarte={"Frontend"}>
                     <BarreProgression nomComp={"React"} taille={80} />
@@ -34,13 +38,6 @@ const PageComptence = () => {
                 <CardComp titreCarte={"Divers"}>
                     <BarreProgression nomComp={"react"} taille={80} />
                 </CardComp>
-            </div>
-
-
-            <div className='text-comptence'>
-                <span className='span-pres'>
-                    Je code tous les jours pour améliorer mes compétences. C'est une passion pour moi.
-                </span>
             </div>
         </div>
     </div>);

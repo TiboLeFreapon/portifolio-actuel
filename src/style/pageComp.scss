@@ -62,16 +62,20 @@
             }
         }
 
-
         .text-comptence{
             line-height: 150%;
-            width: 80%;
+            width: 90%;
             margin-top: 100px;
-            color: rgba(0, 0, 0, 0.645);
+            color: rgba(0, 0, 0, 0.949);
             font-size: x-large;
             font-weight: bolder;
-            margin: 80px 0;
+            margin: 80px 0 20px 0;
             text-align: left;
+            span{
+
+            color: rgba(8, 8, 8, 0.65);
+            }
+
         }
     }
 }

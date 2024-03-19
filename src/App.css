@@ -3,6 +3,11 @@
  /*background: url(./img/logo512.png);*/
 }
 
+a{
+  text-decoration: none;
+  color: unset;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,0 +1,57 @@
+.projets {
+    background-color: rgb(93, 138, 75);
+    padding: 100px 0;
+
+    .pres {
+        line-height: 150%;
+        width: 90%;
+        color: rgba(0, 0, 0, 0.949);
+        font-size: x-large;
+        font-weight: bolder;
+        margin: 0 0 20px 20px;
+        text-align: left;
+
+        span {
+            color: rgba(8, 8, 8, 0.65);
+        }
+    }
+
+    .contenu-projet {
+        width: 100%;
+        overflow-x: scroll;
+        margin: 60px 0px;
+
+        .overflow-affiche {
+            width: 2000px;
+
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+
+            .projet {
+                width: 400px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 0.146);
+                text-align: left;
+                align-items: flex-start;
+                border-radius: 5px;
+                span{
+                    width: 80%;
+                    margin: 12px;
+                }
+                .titre{
+                    font-size: xx-large;
+                }
+                .projet-pp{
+                    font-size: smaller;
+                    opacity: 0.8;
+                }
+            }
+
+
+        }
+    }
+
+}

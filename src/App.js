@@ -3,6 +3,7 @@ import './App.css';
 import PageAccueil from './components/PageAccueil';
 import PageComptence from './components/PageComptence';
 import PageProjet from './components/PageProjets';
+import PageExp from './components/PageExp';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <PageAccueil/>
       <PageComptence/>
       <PageProjet/>
+      <PageExp/>
     </div>
   );
 }

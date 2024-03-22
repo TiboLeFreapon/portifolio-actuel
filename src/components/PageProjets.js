@@ -1,5 +1,6 @@
 import '../style/pageProjet.scss';
 import Projet from './Projet';
+import TacheBG from './TacheBG';
 
 const PageProjet = () => {
 
@@ -15,6 +16,8 @@ const PageProjet = () => {
     
     return (
         <div className="projets">
+
+{/* <TacheBG fichier={"transition1"} nom={"transition1 transition"} taille={"100px"}/> */}
             <div className="pres">
                 Projets. <span>En glissant sur le côté vous trouverez quelques uns de mes projets.</span>
             </div>

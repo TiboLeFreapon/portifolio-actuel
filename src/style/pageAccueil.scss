@@ -6,11 +6,11 @@
     display: flex;
     justify-content: center;
     background-size: 100% 100%;
-    background-color: rgb(63, 71, 78);
+    background-color: white;
 
 
     .tache {
-        width: auto;
+        min-width: 100%;
         position: absolute;
         background-size: cover;
     }

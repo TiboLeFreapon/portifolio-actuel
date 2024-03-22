@@ -1,9 +1,9 @@
-const TacheBG = ({ tache, taille }) => {
+const TacheBG = ({ nom, fichier, taille }) => {
 
-    const svg = require(`../img/couche${tache}.svg`)
+    const svg = require(`../img/${fichier}.svg`)
 
     return (
-        <img src={svg} className={"tache tache" +  tache } height={taille} />
+        <img src={svg} className={nom} height={taille} />
     );
 };
 

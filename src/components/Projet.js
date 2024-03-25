@@ -4,7 +4,7 @@ const Projet = ({ nom, description, projetPro, imgFond, lien }) => {
     return (
         <a href={lien} target="_blank" rel="noopener noreferrer">
             <div className="projet" >
-                <span className="projet-pp">{projetPro ? "projet professionnel" : "projet personnel"}</span>
+                <span className="projet-pp">{projetPro ? "Projet professionnel" : "Projet personnel"}</span>
                 <span className="titre">{nom}</span>
                 <span className="description">{description}</span>
             </div>

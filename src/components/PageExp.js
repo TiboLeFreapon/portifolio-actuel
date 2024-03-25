@@ -17,7 +17,7 @@ function ContenuExperience(props) {
             <div className='text-exp'>
                 <span className='pres'>
                     Experiences.
-                    <span > Voici mes 4 années d'expériences dans le web.
+                    <span > Voici mes expériences dans le développement.
                     </span>
                 </span>
             </div>

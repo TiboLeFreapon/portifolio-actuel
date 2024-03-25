@@ -36,7 +36,10 @@ const PageComptence = () => {
                 </CardComp>
 
                 <CardComp titreCarte={"Divers"}>
-                    <BarreProgression nomComp={"react"} taille={80} />
+                    <BarreProgression nomComp={"Powershell"} taille={40} />
+                    <BarreProgression nomComp={"VBA"} taille={60} />
+                    <BarreProgression nomComp={"Scrum"} taille={80} />
+                    <BarreProgression nomComp={"Jira"} taille={80} />
                 </CardComp>
             </div>
         </div>

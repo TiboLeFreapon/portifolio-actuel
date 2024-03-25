@@ -9,7 +9,7 @@ function Technologies(props) {
   }
   return (
     <div className="technologies">
-      <div className={"button-mission"}>Technologies utilsées</div> <br />
+      <div className="titre-techno">Technologies utilsées</div> 
       <div className="techno-utilise">{renduTechno}</div>
     </div>
   );

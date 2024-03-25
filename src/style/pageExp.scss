@@ -1,18 +1,24 @@
 .page-experiences {
-    background-color: #526F7B;
+    background-color: #011E2B;
     padding: 100px 0;
 
-    .pres {
-        line-height: 150%;
-        width: 90%;
-        color: rgba(0, 0, 0, 0.949);
-        font-size: x-large;
-        font-weight: bolder;
-        margin: 0 0 20px 20px;
+    .text-exp {
+
+
         text-align: left;
 
-        span {
-            color: rgba(8, 8, 8, 0.65);
+        .pres {
+            line-height: 150%;
+            width: 90%;
+            color: #ffffff;
+            font-size: x-large;
+            font-weight: bolder;
+            margin: 0 0 20px 20px;
+            text-align: left;
+
+            span {
+                color: rgba(255, 255, 255, 0.65);
+            }
         }
     }
 
@@ -21,20 +27,21 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
 
         .experience {
-            background-image: linear-gradient(white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+            background-color: #fefefe15;
             width: 300px;
             text-align: left;
             border-radius: 10px;
-            margin: 10px;
+            margin: 30px;
             padding: 10px;
 
             .entete {
                 margin-bottom: 30px;
 
                 .societe {
-                    font-size: larger;
+                    font-size: x-large;
                 }
 
                 .date {
@@ -46,7 +53,13 @@
                 margin-bottom: 20px;
 
                 .nom-mission {
-                    color: red;
+                    background-color: #f3ec78;
+                    background-image: linear-gradient(45deg, #0eb5f7, #f4b2e5);
+                    background-size: 100%;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
 
                 }
 
@@ -65,6 +78,18 @@
             }
 
             .technologies {
+
+                .titre-techno {
+
+                    background-color: #f3ec78;
+                    background-image: linear-gradient(45deg, #0ef716, #043219);
+                    background-size: 100%;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                }
+
                 .techno-utilise {
                     display: flex;
                     flex-wrap: wrap;
@@ -74,7 +99,7 @@
                         background-color: rgba(255, 255, 255, 0.382);
                         padding: 5px;
                         border-radius: 10px;
-                        border: 1px solid white;
+                        border: 1px solid rgb(3, 250, 11);
                     }
                 }
             }

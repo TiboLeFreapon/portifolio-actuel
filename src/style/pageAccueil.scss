@@ -5,51 +5,60 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    background-size: 100% 100%;
-    background-color: white;
+    background-color: #011E2B;
 
+    .tache{
 
-    .tache {
-        min-width: 100%;
         position: absolute;
-        background-size: cover;
+        width: 100%;
+        height: 100%;
+        svg{
+            width: 100%;
+            height: 100%;
+            border: 1px solid green;
+        }
     }
+    // .tache {
+    //     //background-color: green;
+    //     max-width: 100%;
+    //     position: absolute;
+    //     background-size: cover;
+    //     top:0;
+    //     left: 0;
+    //     svg{
+    //         height: 100%;
+    //         width: 100%;
+    //         opacity: 0.5;
+    //     }
+    // }
 
     .tache1 {
         //animation: apparution 3s ease-in-out 0s 1, mouvement1 4s linear 4s infinite;
        // animation: apparution 3s ease-in-out 0s 1,mouvement 4s linear 4s infinite;
-        animation: mouvement1 8s linear 0s infinite;
+        //animation: mouvement1 8s linear 0s infinite;
     }
 
     .tache2 {
 
-        transform: scale(100);
-        //animation: apparution 3s ease-in-out 0.5s 1 normal forwards, mouvement 3s linear 5s infinite;
-        //animation: apparution 3s ease-in-out 0s 1,aggrandit 10s linear 5s infinite;
-        animation: aggrandit 8s linear 0s infinite;
+        //transform: scale(100);
+       //animation: aggrandit 8s linear 0s infinite;
     }
 
     .tache3 {
 
-        transform: scale(100);
-        //animation: apparution 3s ease-in-out 1s 1 normal forwards, mouvement 4s linear 5s infinite;
-        //animation:apparution 3s ease-in-out 0s 1, mouvement 8s linear 5s infinite;
-        animation: mouvement 8s linear 0s infinite;
+        //transform: scale(100);
+       //animation: mouvement 8s linear 0s infinite;
     }
 
     .tache4 {
 
-        transform: scale(100);
-        //animation: apparution 3s ease-in-out 1.5s 1 normal forwards, mouvement 5s linear 5s infinite;
-        //animation: apparution 3s ease-in-out 0s 1,aggrandit 15s linear 5s infinite;
-        animation: aggrandit 7s linear 0s infinite;
+        //transform: scale(100);  animation: aggrandit 7s linear 0s infinite;
     }
 
     .tache5 {
 
-        transform: scale(100);
-        //animation: apparution 3s ease-in-out 2s 1 normal forwards, mouvement 5s linear 6s infinite;
-        animation: aggrandit 9s linear 0s infinite;
+        //transform: scale(100); 
+        //animation: aggrandit 9s linear 0s infinite;
     }
 
     .panneau-acc {

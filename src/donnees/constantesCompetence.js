@@ -55,11 +55,11 @@ module.exports = {
           {
             name: "Développeur Full Stack",
             resume:
-              "Développement d'une application web pour un client. L'objectif était d'afficher tout un tas de statisques sur les billets techniques ouverts dans l'entreprise.",
+              "Refonte professionnelle d'un outil client.",
             taches: [
-              "Développement d'interface en Vue.js.",
-              "Création de bases de données via MongoDb.",
-              "Développement des fonctionnalités Back-End via Node.js.",
+              "Développement d'interface en React js.",
+              "Création et maintient de bases de données.",
+              "Développement des fonctionnalités Back-End.",
             ],
           },
           {
@@ -67,7 +67,7 @@ module.exports = {
             resume:
               "Création d'un outil permettant l'audit de l'Active Directory de nos clients.",
             taches: [
-              "Développement des fonctionnalités Powershell afin de récupérer les informalions relatif à l'Active Directory ",
+              "Développement des fonctionnalités Powershell afin de récupérer les informalions relatif à l'Active Directory.",
   
               "Traitement des informations récupérées pour en faire un tableau de bord version web.",
             ],

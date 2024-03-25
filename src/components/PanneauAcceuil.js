@@ -10,8 +10,8 @@ const PanneauAccueil = () => {
                     Développeur web
                 </h3>
                 <div className="pres-site">
-                    <span>Bienvenu sur mon site web ! J'espère que l'expérience vous plaira.</span><br/>
-                    <span>Il est tout nouveau, je deploie petit à petit.</span> </div>
+                    <span>Bienvenue sur mon site web ! J'espère que l'expérience vous plaira.</span><br/>
+                    <span>Il est tout nouveau, je travaille en ce moment dessus.</span> </div>
             </div>
         </div>
     )

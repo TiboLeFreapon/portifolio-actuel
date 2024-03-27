@@ -13,7 +13,6 @@ const PageProjet = () => {
     const lienPJ = "https://thibaultschmitt.com/#/";
     const lienGitHub = "https://github.com/TiboLeFreapon/";
     
-    
     return (
         <div className="projets">
 
@@ -23,10 +22,10 @@ const PageProjet = () => {
             </div>
             <div className="contenu-projet">
                 <div className="overflow-affiche">
-                    <Projet lien={lienAntidote} nom={"Antidote"} projetPro={true} description={descriptionAntidote}/>
-                    <Projet lien={lienPJ} nom={"Portfolio Junior"} projetPro={false} description={descriptionPj}/>
-                    <Projet lien={beerPong} nom={"Classement beer pong"} projetPro={false} description={descriptionBPC}/>
-                    <Projet lien={lienGitHub} nom={"Git hub"} projetPro={false} description={descriptionGH} imgFond={"github.png"}/>
+                    <Projet lien={lienAntidote} nom={"Antidote"} projetPro={true} description={descriptionAntidote} imgFond={"../img/fondprojet/fondantidote.png"}/>
+                    <Projet lien={lienPJ} nom={"Portfolio Junior"} projetPro={false} description={descriptionPj} imgFond={"../img/fondprojet/fondjunior.png"}/>
+                    <Projet lien={beerPong} nom={"Classement beer pong"} projetPro={false} description={descriptionBPC} imgFond={"../img/fondprojet/fondbeerpong.png"}/>
+                    <Projet lien={lienGitHub} nom={"Git hub"} projetPro={false} description={descriptionGH} imgFond={"../img/fondprojet/fondgithub.png"}/>
                 </div>
             </div>
         </div>

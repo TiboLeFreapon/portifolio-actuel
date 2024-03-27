@@ -2,11 +2,12 @@
     background-color: #011E2B;
     padding: 100px 0;
 
-    .transition1{
+    .transition1 {
         width: 100%;
         height: 150px;
         position: absolute
     }
+
     .pres {
         line-height: 150%;
         width: 90%;
@@ -37,22 +38,58 @@
                 width: 400px;
                 height: 400px;
                 display: flex;
-                flex-direction: column;
-                background-color: rgba(255, 255, 255, 0.146);
-                text-align: left;
-                align-items: flex-start;
                 border-radius: 10px;
-                span{
-                    width: 80%;
-                    margin: 12px;
+
+                align-items: flex-end;
+
+                .description {
+
+                    background-color: rgba(30, 31, 31, 0.669);
+                    width: 100%;
+                    height: 50%;
+                    justify-content: flex-end;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+
+                    span {
+                        width: 80%;
+                        margin: 12px;
+                    }
+
+                    .titre {
+                        font-size: xx-large;
+                    }
+
+                    .projet-pp {
+                        font-size: smaller;
+                        opacity: 0.8;
+                    }
+                    .description-proj{
+
+
+                    height: 40%;
+                        align-self: flex-start;
+                    }
+        
+
                 }
-                .titre{
-                    font-size: xx-large;
-                }
-                .projet-pp{
-                    font-size: smaller;
-                    opacity: 0.8;
-                }
+            }
+
+            .Antidote {
+                background-image: url("../img/fondprojet/fondantidote.png");
+            }
+
+            .Portfolio {
+                background-image: url("../img/fondprojet/fondjunior.png")
+            }
+
+            .Classement {
+                background-image: url("../img/fondprojet/fondbeerpong.png")
+            }
+
+            .Git {
+                background-image: url("../img/fondprojet/fondgithub.png")
             }
 
 

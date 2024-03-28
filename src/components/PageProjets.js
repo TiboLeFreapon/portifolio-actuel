@@ -10,7 +10,7 @@ const PageProjet = () => {
     const descriptionGH = "Mon Git Hub. vous pourrez y retrouver mes autres projets.";
     const lienAntidote = "https://www.antidote.info/en/antidote-web";
     const beerPong = "https://bestofbeerpong.com/";
-    const lienPJ = "https://thibaultschmitt.com/#/";
+    const lienPJ = "https://schmittthibault.com/#/";
     const lienGitHub = "https://github.com/TiboLeFreapon/";
     
     return (

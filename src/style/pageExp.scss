@@ -6,6 +6,7 @@
 
 
         text-align: left;
+        margin: 0 0 0 20px;
 
         .pres {
             line-height: 150%;
@@ -13,10 +14,11 @@
             color: #ffffff;
             font-size: x-large;
             font-weight: bolder;
-            margin: 0 0 20px 20px;
             text-align: left;
 
             span {
+
+            margin: 0 20px 20px 20px;
                 color: rgba(255, 255, 255, 0.65);
             }
         }

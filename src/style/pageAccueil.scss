@@ -6,8 +6,12 @@
     display: flex;
     justify-content: center;
     background-size: 100% 100%;
+    //background: linear-gradient(#ABC7FF, #C1E3FF);
 
-    background-color: #011E2B;
+    --gradient-start: #ABC7FF;
+    --gradient-start-text: '#ABC7FF';
+    --gradient-end: #C1E3FF;
+    --gradient-end-text: '#C1E3FF';
 
 
     .tache{

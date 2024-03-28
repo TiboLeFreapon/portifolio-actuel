@@ -11,7 +11,7 @@ const PanneauAccueil = () => {
                 </h3>
                 <div className="pres-site">
                     <span>Bienvenue sur mon site web ! J'espère que l'expérience vous plaira.</span><br/>
-                    <span>Il est tout nouveau, je travaille en ce moment dessus.</span> </div>
+                    <span>Il est tout nouveau, je travaille dessus en ce moment.</span> </div>
             </div>
         </div>
     )

@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  background-color: #011E2B;;
  /*background: url(./img/logo512.png);*/
  color: white;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 a{

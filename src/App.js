@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import PageAccueil from './components/PageAccueil';
 import PageComptence from './components/PageComptence';
 import PageProjet from './components/PageProjets';
 import PageExp from './components/PageExp';
+import PageContact from './components/PageContact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <PageComptence/>
       <PageProjet/>
       <PageExp/>
+      <PageContact/>
     </div>
   );
 }

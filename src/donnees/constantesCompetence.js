@@ -34,7 +34,10 @@ module.exports = {
             name: "Développeur Front-end",
             resume: "Développer et maintenir l'application Antidote Web.",
             taches: [
-              "Développement des nouvelles fonctionnalités via React/ Redux.",
+              "Développement des nouvelles fonctionnalités via React.",
+              "Connection au API et récupération des données.",
+              "Traitement et affichage des données.",
+              "Création des actions et stockage des données dans le store Redux.",
   
               "Correction de bogues dans du code complexe.",
   

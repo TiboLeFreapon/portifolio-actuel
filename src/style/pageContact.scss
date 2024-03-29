@@ -71,10 +71,11 @@
         }
 
         .form-contact {
-            margin: 100px;
-
+            margin: 100px auto;
             justify-content: center;
             display: flex;
+            width: 95%;
+            max-width: 600px;
 
             form {
                 color: rgba(0, 0, 0, 0.651);
@@ -85,7 +86,7 @@
                display: flex;
 
                 flex-direction: column;
-                width: 80%;
+                width: 90%;
                 max-width: 600px;
 
                 .phrase-entre{
@@ -95,11 +96,10 @@
 
                 .label-list {
                     margin-bottom: 40px;
-                    min-width: 300px;
                     display: flex;
                     align-self: center;
                     justify-content: center;
-                    width: 100%;
+                    width: 90%;
                     flex-direction: column;
 
                     label {

@@ -13,18 +13,25 @@ function Experience(props) {
   }
   return (
     <div className="experience">
-      <div className="entete">
-        <a href={experienceEnCours.lien} target="blank">
-          <span className="societe">{experienceEnCours.societe}</span>
-        </a>
-        <div className="date">
-          <span>de {experienceEnCours.dateDebut}</span>
-          <span> à {experienceEnCours.dateFin}</span> <br />
-          <span>{experienceEnCours.contrat}</span>
+      <div className="cote-gauche">
+        <div className="haut">
+          <a href={experienceEnCours.lien} target="blank">
+            <span className="societe">{experienceEnCours.societe}</span>
+          </a>
+          <div className="date">
+            <span>de {experienceEnCours.dateDebut}</span>
+            <span> à {experienceEnCours.dateFin}</span> <br />
+            <span>{experienceEnCours.contrat}</span>
+          </div>
+        </div>
+        <div className="bas">
+          <Technologies indexExperience={props.indexExperience} />
         </div>
       </div>
-      {missions}
-      <Technologies indexExperience={props.indexExperience} />
+      <div className="cote-droit">
+
+        {missions}
+      </div>
     </div>
   );
 }

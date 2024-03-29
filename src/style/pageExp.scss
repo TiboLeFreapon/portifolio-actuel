@@ -17,7 +17,7 @@
 
             span {
 
-            margin: 0 0 0 10px;
+                margin: 0 0 0 10px;
                 color: rgba(255, 255, 255, 0.65);
             }
         }
@@ -33,23 +33,53 @@
         .experience {
             box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
             //background-color: #fefefe15;
-            background-color: rgba(255, 255, 255, 0.15);
-            width: 300px;
+            width: 80%;
             text-align: left;
-            border-radius: 10px;
             margin: 30px;
-            padding: 20px 20px 35px 20px;
+            display: flex;
+            flex-direction: row;
+            min-height: 300px;
+            font-size: larger;
 
-            .entete {
+            .cote-gauche {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: space-evenly;
                 margin-bottom: 30px;
+                width: 40%;
 
-                .societe {
-                    font-size: x-large;
+                .haut {
+                    background: linear-gradient(120deg, rgba(3, 202, 247, 0.445) 0%, rgba(3, 202, 247, 0.445) 30%, rgb(14 36 207 / 79%) 30%, rgba(14, 37, 207, 0.508) 100%), linear-gradient(7deg, rgb(3, 202, 247) 0%, rgb(3, 202, 247)  50%, rgb(14 36 207 / 9%) 50%, rgba(14, 37, 207, 0.508) 100%);
+                    padding: 5px;
+                    border: 5px solid black;
+                    height: auto;
+
+                    .societe {
+                        //font-size: x-large;
+                    }
+
+                    .date {
+                        font-size: smaller;
+                    }
                 }
 
-                .date {
-                    font-size: small;
+                .bas {
+                    background: linear-gradient(157deg, rgba(3, 247, 40, 0.445) 0%, rgba(3, 247, 40, 0.445) 30%, rgba(17, 207, 14, 0.79) 30%, rgba(17, 207, 14, 0.79) 100%), linear-gradient(2deg, rgb(3, 202, 247) 0%, rgba(100, 125, 130, 0.45) 50%, rgba(14, 36, 207, 0.09) 50%, rgba(14, 37, 207, 0.508) 100%);
+                    padding: 5px;
+                    border: 5px solid black;
+                    min-height: auto;
+                    height: 100%;
                 }
+            }
+
+            .cote-droit {
+                background: linear-gradient(157deg, rgba(247, 137, 3, 0.809) 0%, rgba(247, 137, 3, 0.809) 30%, rgba(228, 176, 5, 0.79) 30%, rgba(228, 176, 5, 0.79) 100%), linear-gradient(2deg, rgba(229, 139, 5, 0.702) 0%, rgba(229, 139, 5, 0.702) 50%, rgba(207, 204, 14, 0.508) 50%, rgba(207, 204, 14, 0.508) 100%);
+
+                padding: 5px;
+                border: 5px solid black;
+                width: 60%;
+
             }
 
             .missions {
@@ -58,20 +88,22 @@
                 .nom-mission {
 
                     font-size: larger;
-                    background-color: #f3ec78;
-                    background-image: linear-gradient( #0eb5f7, #10e8ef);
-                    background-size: 100%;
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    -moz-text-fill-color: transparent;
+                    // background-color: #f3ec78;
+                    // background-image: linear-gradient(#0eb5f7, #10e8ef);
+                    // background-size: 100%;
+                    // -webkit-background-clip: text;
+                    // -moz-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                    // -moz-text-fill-color: transparent;
 
                 }
 
                 .resume {
                     font-style: italic;
-                    font-size: 12px;
+                    // font-size: 12px;
+                    font-size: smaller;
                     margin-bottom: 10px;
+                    color: rgb(59, 58, 58);
                 }
 
                 .taches-contenu {
@@ -80,27 +112,31 @@
                     flex-direction: column;
                     gap: 5px;
                     font-size: smaller;
+                    .taches{
+                        margin-top: 5px;
+                    }
                 }
             }
 
             .technologies {
 
                 .titre-techno {
-
-                    background-color: #f3ec78;
-                    background-image: linear-gradient(#0ef716, #00ff73);
-                    background-size: 100%;
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    -moz-text-fill-color: transparent;
-                    font-size: larger;
+                    
+                    // background-color: #f3ec78;
+                    // background-image: linear-gradient(#0ef716, #00ff73);
+                    // background-size: 100%;
+                    // -webkit-background-clip: text;
+                    // -moz-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                    // -moz-text-fill-color: transparent;
+                    //font-size: larger;
                 }
 
                 .techno-utilise {
                     display: flex;
                     flex-wrap: wrap;
                     margin: 5px 0px;
+
                     span {
                         margin: 3px;
                         background-color: rgba(255, 255, 255, 0.382);

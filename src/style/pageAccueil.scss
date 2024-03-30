@@ -1,3 +1,5 @@
+@import "../style/Variable.scss/VariablesCouleurs.scss";
+
 .page-accueil {
     //background-color: #a714c4;
     position: relative;
@@ -5,7 +7,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    background-color: rgb(35, 35, 35);
+    background-color: $fond-acc;
     color: white;
     .panneau-acc {
         max-width: 80%;

@@ -1,5 +1,9 @@
+@import "../style/Variable.scss/VariablesCouleurs.scss";
+
+
 .page-experiences {
-    padding: 100px 0;
+    background-color: $fond-experience;
+    padding: 20px 0 100px 0;
 
     .text-exp {
 

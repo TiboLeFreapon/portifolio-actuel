@@ -1,6 +1,9 @@
+@import "../style/Variable.scss/VariablesCouleurs.scss";
+
+
 .projets {
-   // background-color: #011E2B;
-    padding: 100px 0;
+   background-color: $fond-projet;
+    padding-bottom: 100px;
 
     .transition1 {
         width: 100%;
@@ -9,12 +12,13 @@
     }
 
     .pres {
+        padding-top: 20px;
         line-height: 150%;
         width: 90%;
         color: rgba(254, 254, 254, 0.949);
         font-size: x-large;
         font-weight: bolder;
-        margin: 20px 0 20px 20px;
+        margin: 0px 0 20px 20px;
         text-align: left;
 
         span {
@@ -51,6 +55,8 @@
                     display: flex;
                     flex-direction: column;
                     text-align: left;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
 
                     span {
                         width: 80%;

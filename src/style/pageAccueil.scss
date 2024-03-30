@@ -5,102 +5,59 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    background-size: 100% 100%;
-    //background: linear-gradient(#ABC7FF, #C1E3FF);
-
-    --gradient-start: #ABC7FF;
-    --gradient-start-text: '#ABC7FF';
-    --gradient-end: #C1E3FF;
-    --gradient-end-text: '#C1E3FF';
-
-
-    .tache{
-
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        svg{
-            width: 100%;
-            height: 100%;
-        }
-    }
-    // .tache {
-    //     //background-color: green;
-    //     max-width: 100%;
-    //     position: absolute;
-    //     background-size: cover;
-    //     top:0;
-    //     left: 0;
-    //     svg{
-    //         height: 100%;
-    //         width: 100%;
-    //         opacity: 0.5;
-    //     }
-    // }
-
-    .tache1 {
-        //animation: apparution 3s ease-in-out 0s 1, mouvement1 4s linear 4s infinite;
-       // animation: apparution 3s ease-in-out 0s 1,mouvement 4s linear 4s infinite;
-        //animation: mouvement1 8s linear 0s infinite;
-    }
-
-    .tache2 {
-
-        //transform: scale(100);
-       //animation: aggrandit 8s linear 0s infinite;
-    }
-
-    .tache3 {
-
-        //transform: scale(100);
-       //animation: mouvement 8s linear 0s infinite;
-    }
-
-    .tache4 {
-
-        //transform: scale(100);  animation: aggrandit 7s linear 0s infinite;
-    }
-
-    .tache5 {
-
-        //transform: scale(100); 
-        //animation: aggrandit 9s linear 0s infinite;
-    }
-
+    background-color: rgb(35, 35, 35);
+    color: white;
     .panneau-acc {
+        max-width: 80%;
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-
+        padding-top: 100px;
         .contenu-panneau-acc {
-            backdrop-filter: blur(10px);
+
+            //backdrop-filter: blur(10px);
             visibility: hidden;
             animation: apparition 1s ease-in-out 2s 1 normal forwards;
-            background-color: rgba(255, 255, 255, 0.81);
-            color: rgba(14, 6, 6, 0.76);
+            color: white;
             z-index: 10;
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
+            max-width: 450px;
             padding: 15px;
             border-radius: 10px;
-            .titre{
-                font-size: 40px;
+            .titre, .sous-titre{
+                display: flex;
+                flex-direction: column;
+                font-size: 72px;
                 margin: 5px;
-                font-weight: 300;
-            }
-            h3{
-
-                font-weight: 280;
-                margin: 0 auto;
-                font-size: 30px;
+                font-weight: 800;
+                .prenom{
+                    align-self: flex-start;
+                }
+                .nom, .web{
+                    align-self: flex-end;
+                }
+                .dev{
+                    align-self: flex-start;
+                }
             }
             .pres-site{
-
-
                 font-weight: 400;
                 margin: 30px 10px;
                 line-height: 25px;
+                font-size: larger;
+            }
+        }
+        .fond-ecran{
+            animation: rotation 60s linear 0s infinite;
+            opacity: 0.2;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            img{
+                
+            width: 100%;
+            height: auto;
             }
         }
     }
@@ -209,4 +166,12 @@
     0%{transform: scale(1);}
     50%{transform: scale(1.03);}
     100%{transform: scale(1);}
+}
+
+@keyframes rotation {
+
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+    
 }

@@ -2,7 +2,7 @@
 
 
 .projets {
-   background-color: $fond-projet;
+    background-color: $fond-projet;
     padding-bottom: 100px;
 
     .transition1 {
@@ -39,6 +39,7 @@
             justify-content: space-evenly;
 
             .projet {
+                background-color: $couleur-projet;
                 width: 400px;
                 height: 400px;
                 display: flex;
@@ -71,13 +72,14 @@
                         font-size: smaller;
                         opacity: 0.8;
                     }
-                    .description-proj{
+
+                    .description-proj {
 
 
-                    height: 40%;
+                        height: 40%;
                         align-self: flex-start;
                     }
-        
+
 
                 }
             }

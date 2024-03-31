@@ -43,6 +43,12 @@
                     align-self: flex-start;
                 }
             }
+            @media (max-width: 800px) {
+                .titre, .sous-titre{
+
+                font-size: 52px;
+                }
+            }
             .pres-site{
                 font-weight: 400;
                 margin: 30px 10px;

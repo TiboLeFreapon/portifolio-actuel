@@ -28,6 +28,7 @@ module.exports = {
           "Git",
           "Docker",
           "Less",
+          "VBA"
         ],
         missions: [
           {

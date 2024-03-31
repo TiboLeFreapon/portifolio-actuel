@@ -10,15 +10,16 @@
     background: $fond-acc;
     color: white;
     .panneau-acc {
-        max-width: 80%;
+        width: 80%;
+        max-width: 500px;
         position: relative;
         display: flex;
         padding-top: 100px;
         .contenu-panneau-acc {
 
             //backdrop-filter: blur(10px);
-            visibility: hidden;
-            animation: apparition 1s ease-in-out 2s 1 normal forwards;
+            //visibility: hidden;
+            //animation: apparition 1s ease-in-out 2s 1 normal forwards;
             color: white;
             z-index: 10;
             display: flex;

@@ -35,7 +35,7 @@ module.exports = {
             resume: "Développer et maintenir l'application Antidote Web.",
             taches: [
               "Développement des nouvelles fonctionnalités via React.",
-              "Connection au API et récupération des données.",
+              "Connection aux API et récupération des données.",
               "Traitement et affichage des données.",
               "Création des actions et stockage des données dans le store Redux.",
   
@@ -70,9 +70,10 @@ module.exports = {
             resume:
               "Création d'un outil permettant l'audit de l'Active Directory de nos clients.",
             taches: [
+              "Création de l'interface utilisateur de l'outil.",
               "Développement des fonctionnalités Powershell afin de récupérer les informalions relatif à l'Active Directory.",
   
-              "Traitement des informations récupérées pour en faire un tableau de bord version web.",
+              "Récupération via les Api.",
             ],
           },
           {

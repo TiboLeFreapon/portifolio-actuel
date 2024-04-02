@@ -1,23 +1,32 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useEffect } from "react";
+import { LangContext } from "../../App";
+const TEXTE = require("../../donnees/acc/textAcc");
+
 
 const PanneauAccueil = () => {
 
+    const lang = useContext(LangContext);
    const [textAffichayA, settextAffichayA] = useState("");
    const [textAffichayB, settextAffichayB] = useState("");
    const [textAffichayC, settextAffichayC] = useState("");
    const [textAffichayD, settextAffichayD] = useState("");
    const [textAffichayE, settextAffichayE] = useState("");
-    const logoReact = require("../img/acc/react.png");
-    const logoweb = require("../img/acc/web.png");
 
-    const texteA = "Thibault";
-    const texteB = "Schmitt";
-    const texteC = "Développeur";
-    const texteD = "web";
-    const texteE = "Bienvenue sur mon site web ! J'espère que l'expérience vous plaira."
-    const texteF = "Il est tout nouveau, je travaille dessus en ce moment."
+    const texteA = TEXTE[lang].texte1;
+    const texteB = TEXTE[lang].texte2;
+    const texteC = TEXTE[lang].texte3;
+    const texteD = TEXTE[lang].texte4;
+    const texteE = TEXTE[lang].texte5;
 
+    const changementLange = () => {
+        settextAffichayA("");
+        settextAffichayB("");
+        settextAffichayC("");
+        settextAffichayD("");
+        settextAffichayE("");
+    }
+    
     useEffect(()=>{
         if(textAffichayA.length < texteA.length){
             setTimeout(()=>{
@@ -42,11 +51,15 @@ const PanneauAccueil = () => {
         }
     }, [textAffichayA, textAffichayB, textAffichayC, textAffichayD, textAffichayE])
 
+    useEffect(()=>{
+        changementLange();
+    }, [lang])
+
     return (
         <div className="panneau-acc">
 
                 <div className="fond-ecran">
-                    <img src={require("../img/acc/fondreact.png")}/>
+                    <img src={require("../../img/acc/fondreact.png")}/>
                 </div>
             <div className="contenu-panneau-acc">
                 <h1 className="titre">

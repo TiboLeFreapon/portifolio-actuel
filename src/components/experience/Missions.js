@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { CaretDownFill } from "react-bootstrap-icons";
 
-const C_COMPETENCE = require("../donnees/constantesCompetence");
+import { useContext } from "react";
+import {LangContext} from "../../App"
+
+const C_COMPETENCE = require("../../donnees/experience/texteExperience");
 
 function Taches(props) {
   const tacheEnCours = props.taches;
@@ -24,8 +25,10 @@ function Taches(props) {
 }
 
 function Missions(props) {
+
+  const lang = useContext(LangContext);
   const missionEnCours =
-    C_COMPETENCE.listeExperience[props.indexExperience].missions[
+    C_COMPETENCE[lang].listeExperience[props.indexExperience].missions[
       props.indexMissions
     ];
   return (

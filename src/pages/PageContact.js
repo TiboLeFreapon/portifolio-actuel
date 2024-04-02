@@ -1,12 +1,17 @@
 import "../style/pageContact.scss"
-import FormContact from "./contact/FormContact";
+import FormContact from "../components/contact/FormContact";
+import { useContext } from "react";
+import { LangContext } from "../App";
+
+const TEXTE_CONTACT = require("../donnees/contact/texteContrat");
 
 const PageContact = () => {
+    const lang = useContext(LangContext);
 
     return (<div className="page-contact">
         <div className='text-exp'>
             <span className='pres'>
-                Contact.<span >N'hésitez pas à me contacter,  je suis très réactif et à la recherche d'un emploi.
+            {TEXTE_CONTACT[lang].titre}<span > {TEXTE_CONTACT[lang].sousTitre}
                 </span>
             </span>
         </div>

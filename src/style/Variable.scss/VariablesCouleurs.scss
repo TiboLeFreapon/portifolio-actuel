@@ -13,42 +13,7 @@ $couleur-projet: #90A4E0;
 
 
 /************experiences************/
-
-// $gradient-entreprise: linear-gradient(7deg,
-// #08c48f8d 0%,
-//         #08c48f72 50%,
-//         #07b0807d 50%,
-//         #07b0807d 100%),
-
-//     linear-gradient(120deg,
-//         #046248 0%,
-//         #046248 30%,
-//         #034F39 30%,
-//         #034F39 100%);
-
-// $gradient-technologies: linear-gradient(157deg,
-//         #00747a80 0%,
-//         #00747a8e 30%,
-//         #00616687 30%,
-//         #00616668 100%),
-
-//     linear-gradient(2deg,
-//         #004E52 0%,
-//         #004E52 50%,
-//         #002729 50%,
-//         #002729 100%);
-// ;
-// $gradient-missions: linear-gradient(2deg,
-//         #243d5676 0%,
-//         #243d5680 50%,
-//         #1e33486d 50%,
-//         #1e33486a 100%),
-//     linear-gradient(157deg,
-//     #18293A 0%,
-//         #18293A 30%,
-//         #121F2B 30%,
-//         #121F2B 100%), ;
-;$gradient-entreprise: rgb(50, 49, 49);
+$gradient-entreprise: rgb(50, 49, 49);
 
 $gradient-technologies: rgb(50, 49, 49);
 
@@ -61,7 +26,12 @@ $gradient-experience: linear-gradient(2deg,
         #1e33486d 50%,
         #1e33486a 100%),
     linear-gradient(157deg,
-    #18293A 0%,
+        #18293A 0%,
         #18293A 30%,
         #121F2B 30%,
         #121F2B 100%), ;
+
+
+/************langues************/
+$fond-bouton-actif: rgba(255, 255, 255, 0.79);
+$fond-bouton-inactif: rgba(255, 255, 255, 0.353);

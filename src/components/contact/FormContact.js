@@ -1,10 +1,16 @@
-import React, { useRef }  from 'react';
+import React, { useRef, useContext } from 'react';
 import emailjs from '@emailjs/browser';
+import { LangContext } from "../../App";
 const C_CONTACT = require("../../donnees/contact/ContactData");
+
+
+const TEXTE_CONTACT = require("../../donnees/contact/texteContrat")
 
 function FormContact() {
 
-    const form = useRef();
+  const lang = useContext(LangContext);
+
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,29 +28,29 @@ function FormContact() {
         },
       );
   };
-    return (
+  return (
 
-        <div className="form-contact">
+    <div className="form-contact">
 
-            <form name="contact" ref={form} onSubmit={sendEmail}>
-                <h2>Contactez-moi directement !</h2>
+      <form name="contact" ref={form} onSubmit={sendEmail}>
+        <h2>{TEXTE_CONTACT[lang].titreContact}</h2>
 
-                <div className='label-list'>
+        <div className='label-list'>
 
-                    <label for="name">Nom: *<input type="text" name="name" required/></label>
+          <label for="name">{TEXTE_CONTACT[lang].nom}<input type="text" name="name" required /></label>
 
-                    <label for="email">Email: <input type="email" name="email" /></label>
-                    <label for="societe">Entreprise: <input type="text" name="societe" /></label>
+          <label for="email">{TEXTE_CONTACT[lang].email}<input type="email" name="email" /></label>
+          <label for="societe">{TEXTE_CONTACT[lang].entreprise}<input type="text" name="societe" /></label>
 
 
-                    <label for="message">Message: *<textarea name="message" maxLength={2000} required></textarea></label>
+          <label for="message">{TEXTE_CONTACT[lang].message}<textarea name="message" maxLength={2000} required></textarea></label>
 
-                </div>
-
-                <button type="submit">Envoyer</button>
-            </form>
         </div>
-    )
+
+        <button type="submit">{TEXTE_CONTACT[lang].envoyer}</button>
+      </form>
+    </div>
+  )
 }
 
 export default FormContact;

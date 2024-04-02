@@ -1,12 +1,16 @@
 
-import Experience from "./Experience";
-import "../style/pageExp.scss"
+import Experience from "../components/experience/Experience";
+import "../style/pageExp.scss";
+import { useContext } from "react";
+import { LangContext } from "../App";
 
-const C_COMPETENCE = require("../donnees/constantesCompetence");
+const C_COMPETENCE = require("../donnees/experience/texteExperience");
 
 function ContenuExperience(props) {
+
+    const lang = useContext(LangContext);
     let contenuExperience = [];
-    for (let i = 0; i < C_COMPETENCE.listeExperience.length; i++) {
+    for (let i = 0; i < C_COMPETENCE[lang].listeExperience.length; i++) {
         contenuExperience.push(
             <Experience indexExperience={i} key={"experience-" + i} />
         );
@@ -16,8 +20,9 @@ function ContenuExperience(props) {
         <div className="page-experiences">
             <div className='text-exp'>
                 <span className='pres'>
-                    Experiences.
-                    <span > Voici mes expériences dans le développement.
+                    {C_COMPETENCE[lang].titre}
+                    <span >
+                        {C_COMPETENCE[lang].sousTitre}
                     </span>
                 </span>
             </div>

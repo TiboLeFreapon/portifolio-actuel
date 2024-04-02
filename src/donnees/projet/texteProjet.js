@@ -5,9 +5,9 @@ module.exports = {
         perso: "Personnel",
         pro: "Professionel",
         projets:[
-            {nom:"Antidote",  description: "Correcteur ortographique. Je travallais en tant que frontend sur l'application.", lien: "https://www.antidote.info/en/antidote-web", projetPro: true, className: "antidote"},
+            {nom:"Antidote",  description: "Correcteur orthographique. Je travaillais en tant que frontend sur l'application.", lien: "https://www.antidote.info/en/antidote-web", projetPro: true, className: "antidote"},
             {nom:"Portfolio Junior", description: "Mon premier portfolio en Vuejs.", lien: "https://schmittthibault.com/#/",  projetPro: false, className: "junior"},
-            {nom:"Classement bierre pong", description: "Mes amies et moi voulions savoir ce qui était le meilleur au beerpong. J'ai donc créée un classement avec des statistiques.", lien: "https://bestofbeerpong.com/", projetPro: false, className: "beerpong"},
+            {nom:"Classement bière pong", description: "Création d'application pour m'entrainer avec NodeJs.", lien: "https://bestofbeerpong.com/", projetPro: false, className: "beerpong"},
             {nom:"Git hub", description: "Mon Git Hub. vous pourrez y retrouver mes autres projets.", lien: "https://github.com/TiboLeFreapon/", projetPro: false, className:"github"},
         ]
     },

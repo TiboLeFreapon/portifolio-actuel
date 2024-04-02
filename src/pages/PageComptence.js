@@ -1,6 +1,6 @@
 import '../style/pageComp.scss';
-import BarreProgression from '../components/Competences/BarreProgression';
-import CardComp from '../components/Competences/CardComp';
+import BarreProgression from '../components/competences/BarreProgression';
+import CardComp from '../components/competences/CardComp';
 import { useEffect, useContext } from 'react';
 import { LangContext } from '../App';
 

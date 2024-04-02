@@ -13,7 +13,7 @@ function Technologies(props) {
   }
   return (
     <div className="technologies">
-      <div className="titre-techno">Technologies utilsées</div> 
+      <div className="titre-techno">{C_COMPETENCE[lang].technoTitre}</div> 
       <div className="techno-utilise">{renduTechno}</div>
     </div>
   );

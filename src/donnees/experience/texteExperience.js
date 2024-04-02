@@ -3,6 +3,7 @@ module.exports = {
   fr:{
     titre: "Expériences. ",
     sousTitre: "Voici mes expériences dans le développement.",
+    technoTitre: "Technologies utilsées",
     listeExperience: [
       {
         societe: "Druide Informatique",
@@ -120,6 +121,7 @@ module.exports = {
   eng:{
     titre: "Experiences. ",
     sousTitre: "These are my experiences in development.",
+    technoTitre: "Technologies used",
     listeExperience: [
       {
         societe: "Druide Informatique",

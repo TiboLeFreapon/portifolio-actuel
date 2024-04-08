@@ -9,6 +9,12 @@ button:hover{
   cursor: pointer;
 }
 
+
+button{
+  color: black;
+}
+
+
 a{
   text-decoration: none;
   color: unset;

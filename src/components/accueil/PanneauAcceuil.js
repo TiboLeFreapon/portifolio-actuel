@@ -7,13 +7,15 @@ const TEXTE = require("../../donnees/acc/textAcc");
 const PanneauAccueil = () => {
 
     const lang = useContext(LangContext);
-    
+
     const [ancienneLang, setAncienneLang] = useState(lang)
     const [textAffichayA, settextAffichayA] = useState("");
     const [textAffichayB, settextAffichayB] = useState("");
     const [textAffichayC, settextAffichayC] = useState("");
     const [textAffichayD, settextAffichayD] = useState("");
     const [textAffichayE, settextAffichayE] = useState("");
+
+    console.log(textAffichayD)
 
     const texteA = TEXTE[lang].texte1;
     const texteB = TEXTE[lang].texte2;
@@ -25,34 +27,38 @@ const PanneauAccueil = () => {
     //dans le cas ou l'animation n'est pas fini.
     useEffect(() => {
         console.log("ok")
-        if(lang === ancienneLang){
-        if (textAffichayA.length < texteA.length) {
+        if (lang === ancienneLang) {
+            if (textAffichayA.length < texteA.length) {
+                setTimeout(() => {
+                    settextAffichayA(textAffichayA + texteA[textAffichayA.length]);
+                }, 150)
+            } else if (textAffichayB.length < texteB.length) {
+                setTimeout(() => {
+                    settextAffichayB(textAffichayB + texteB[textAffichayB.length]);
+                }, 150)
+            } else if (textAffichayC.length < texteC.length) {
+                setTimeout(() => {
+                    settextAffichayC(textAffichayC + texteC[textAffichayC.length]);
+                }, 150)
+            } else if (textAffichayD.length < texteD.length) {
+                setTimeout(() => {
+                    settextAffichayD(textAffichayD + texteD[textAffichayD.length]);
+                }, 150)
+            } else if (textAffichayE.length < texteE.length) {
+                setTimeout(() => {
+                    settextAffichayE(textAffichayE + texteE[textAffichayE.length]);
+                }, 20)
+            }
+        } else {
             setTimeout(() => {
-                settextAffichayA(textAffichayA + texteA[textAffichayA.length]);
-            }, 150)
-        } else if (textAffichayB.length < texteB.length) {
-            setTimeout(() => {
-                settextAffichayB(textAffichayB + texteB[textAffichayB.length]);
-            }, 150)
-        } else if (textAffichayC.length < texteC.length) {
-            setTimeout(() => {
-                settextAffichayC(textAffichayC + texteC[textAffichayC.length]);
-            }, 150)
-        } else if (textAffichayD.length < texteD.length) {
-            setTimeout(() => {
-                settextAffichayD(textAffichayD + texteD[textAffichayD.length]);
-            }, 150)
-        } else if (textAffichayE.length < texteE.length) {
-            setTimeout(() => {
-                settextAffichayE(textAffichayE + texteE[textAffichayE.length]);
-            }, 20)
-        }} else {
-            settextAffichayA("");
-            settextAffichayB("");
-            settextAffichayC("");
-            settextAffichayD("");
-            settextAffichayE("");
-            setAncienneLang(lang)
+                settextAffichayA("");
+                settextAffichayB("");
+                settextAffichayC("");
+                settextAffichayD("");
+                settextAffichayE("");
+                setAncienneLang(lang)
+
+            }, 250)
         }
     }, [textAffichayA, textAffichayB, textAffichayC, textAffichayD, textAffichayE, lang])
 

@@ -24,6 +24,7 @@ const PanneauAccueil = () => {
     //On test si l'ancienne langue et la nouvelle son les mêmes pour pas avoir de bogue lors du changement de langue
     //dans le cas ou l'animation n'est pas fini.
     useEffect(() => {
+        console.log("ok")
         if(lang === ancienneLang){
         if (textAffichayA.length < texteA.length) {
             setTimeout(() => {
@@ -53,7 +54,7 @@ const PanneauAccueil = () => {
             settextAffichayE("");
             setAncienneLang(lang)
         }
-    }, [textAffichayA, textAffichayB, textAffichayC, textAffichayD, textAffichayE])
+    }, [textAffichayA, textAffichayB, textAffichayC, textAffichayD, textAffichayE, lang])
 
 
     return (
